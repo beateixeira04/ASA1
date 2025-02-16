@@ -1,29 +1,28 @@
 # ASA1
 Primeiro projeto da cadeira de análise e síntese de algoritmos - 2º ano de faculdade
 
-Parenthesization of Binary Operations
+Overview
 
-Description
-This project implements an algorithm to determine the correct parenthesization of a sequence of binary operations, given a custom-defined operation table. The goal is to check if a sequence of numbers can be parenthesized to produce a given result.
+This project implements an algorithm to determine the correct parenthesization of a sequence of binary operations, given a custom-defined operation table. The objective is to check whether a sequence of numbers can be parenthesized to produce a given result.
+Problem Description
 
-Input Format
+Given an operation table and a sequence of integers, the goal is to find if there exists a valid parenthesization of the sequence that yields a desired result. If it is possible, the program should print the leftmost valid parenthesization.
+Input
 
-An integer n (size of the operation table) and an integer m (size of the sequence).
+    An integer n (size of the operation table).
+    An integer m (size of the sequence).
+    A n x n table defining the results of the binary operation.
+    A sequence of m integers.
+    An integer representing the desired result.
 
-A n x n table defining the results of the binary operation.
+Output
 
-A sequence of m integers.
-
-An integer representing the desired result.
-
-Output Format
-
-If the sequence can be parenthesized to obtain the desired result, the program prints 1 followed by the leftmost valid parenthesization.
-
-Otherwise, it prints 0.
+    If the sequence can be parenthesized to produce the desired result, the program outputs 1 followed by the leftmost valid parenthesization.
+    Otherwise, it prints 0.
 
 Example
 Input:
+
 3 6
 3 2 1
 3 2 1
@@ -32,17 +31,26 @@ Input:
 1
 
 Output:
+
 1
 ((((2 2) 2) (2 1)) 3)
 
-Compilation & Execution
-Compile with:
+How to Compile & Run
+Compilation
+
+To compile the project, use the following command:
+
 g++ -std=c++11 -O3 -Wall main.cpp -o parenthesization
 
-Run with:
+Execution
+
+Run the program with:
+
 ./parenthesization < input.txt
 
+Where input.txt contains the input data.
 Grade
+
 Score: 20/20
 
-This project was graded 20/20, meaning it correctly implements the required algorithm efficiently.
+This project was graded 20/20, as it efficiently implements the required algorithm.
